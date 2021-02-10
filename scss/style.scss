@@ -27,6 +27,7 @@ body {
    z-index: 2;
    text-align: center;
    background-color: transparent;
+   transition: background-color 0.4s;
    
    &::before {
       content: "";
@@ -42,5 +43,14 @@ body {
    }
 }
 
-@import "_header.scss", "_section-one.scss";
+.section-title {
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 1.2;
+   text-align: center;
+   color: #18191F;
+}
+
+@import "_header.scss", "_section-one.scss", "_section-two.scss", "_section-three.scss", "_section-four.scss", "_section-five.scss";
+
 

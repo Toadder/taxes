@@ -1,0 +1,241 @@
+.section-three {
+   position: relative;
+   transform: skew(0deg, -11deg);
+   height: 710px;
+
+   & > * {
+      transform: skew(0deg, 11deg);
+   }
+
+   &::before {
+      background: #042a97;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      position: absolute;
+      z-index: -1;
+      border-top: 15px solid #ee3834;
+      border-bottom: 15px solid #ee3834;
+   }
+}
+
+.section-three__body {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-top: 60px;
+}
+.section-three__left {
+   margin-right: 15px;
+}
+
+.section-three__title {
+   font-weight: 500;
+   font-size: 28px;
+   line-height: 34px;
+   color: #f2f2f2;
+   margin-bottom: 52px;
+   max-width: 370px;
+}
+
+.section-three__text {
+   line-height: 24px;
+   color: #f2f2f2;
+   max-width: 500px;
+}
+
+.section-three__right {
+}
+
+.form {
+   background: #f2f2f2;
+   box-shadow: 9px 15px 17px 7px rgba(0, 0, 0, 0.17);
+   border-radius: 30px;
+   width: 558px;
+   padding: 70px 70px;
+}
+
+.form__title {
+   font-weight: 500;
+   font-size: 28px;
+   line-height: 34px;
+   color: #000000;
+   margin-bottom: 35px;
+}
+.form__upinput {
+   font-size: 20px;
+   line-height: 30px;
+   color: #696f79;
+   margin-bottom: 10px;
+}
+.form__input {
+   width: 100%;
+   border: 1px solid #8692a6;
+   border-radius: 6px;
+   padding: 24px 30px;
+   margin-bottom: 15px;
+   font-size: 16px;
+
+   &::placeholder {
+      color: #8692a6;
+   }
+}
+
+.form__checkbox {
+   margin-bottom: 46px;
+}
+
+.form__checkbox input[type="checkbox"] {
+   display: none;
+}
+
+.form__checkbox input[type="checkbox"]:checked + label::before {
+   background: url("../img/section-three/checkbox-active.svg") right center;
+   background-color: transparent;
+}
+
+.form__checkbox label {
+   display: inline-block;
+   cursor: pointer;
+   position: relative;
+   padding-left: 36px;
+   margin-right: 0;
+   user-select: none;
+   max-width: 384px;
+   font-size: 16px;
+   line-height: 24px;
+   color: #696f79;
+
+   &::before {
+      content: "";
+      display: inline-block;
+      width: 22px;
+      height: 21px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 5px;
+      bottom: 1px;
+      background-color: #bdbdbd;
+   }
+}
+
+.form__btn {
+   width: 394px;
+   padding: 18px 0;
+   margin: 0 12px;
+   &::before {
+      background-color: #042a97;
+   }
+
+   &:hover::before {
+      background-color: #0636bb;
+   }
+}
+
+@media (max-width: 800px) {
+   .form {
+      padding: 40px;
+      width: 425px;
+   }
+   .form__btn {
+      width: 315px;
+   }
+}
+
+@media (max-width: 768px) {
+   .section-three__title {
+      font-size: 25px;
+      margin-bottom: 46px;
+   }
+   .section-three__text {
+      max-width: 395px;
+   }
+}
+
+@media (max-width: 700px) {
+   .section-three {
+      height: 1070px;
+   }
+   .section-three__body {
+      flex-direction: column;
+      padding-top: 70px;
+   }
+   .section-three__left {
+      margin-bottom: 50px;
+      margin-right: 0;
+   }
+   .section-three__title {
+      text-align: center;
+   }
+   .form__title {
+      font-size: 25px;
+      margin-bottom: 25px;
+      text-align: center;
+   }
+}
+
+@media (max-width: 576px) {
+   .section-three {
+      height: 810px;
+   }
+   .section-three__body {
+      padding-top: 40px;
+   }
+   .section-three__title {
+      font-size: 22px;
+      margin-bottom: 40px;
+   }
+   .section-three__text {
+      max-width: 290px;
+   }
+   .section-three__left {
+      margin-bottom: 40px;
+   }
+   .form {
+      width: 290px;
+      padding: 23px 37px 35px 37px;
+   }
+   .form__title {
+      font-size: 22px;
+      margin-bottom: 17px;
+   }
+   .form__upinput {
+      font-size: 16px;
+      margin-bottom: 0;
+   }
+   .form__input {
+      padding: 9px 16px;
+      font-size: 12px;
+      margin-bottom: 0;
+
+      &:last-of-type {
+         margin-bottom: 10px;
+      }
+   }
+   .form__checkbox {
+      margin-bottom: 16px;
+   }
+   .form__checkbox label {
+      font-size: 11px;
+      max-width: 210px;
+      padding-left: 20px;
+      line-height: 1.5;
+
+      &::before {
+         width: 11px;
+         height: 11px;
+      }
+   }
+   .form__checkbox input[type="checkbox"]:checked + label::before {
+      background: url("../img/section-three/checkbox-active.-mobile.svg") right center;
+   }
+   .form__btn {
+      width: 190px;
+      font-size: 16px;
+      padding: 2px 0;
+   }
+}
