@@ -26,6 +26,10 @@
   font-style: normal;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   font-family: "San Francisco Pro", sans-serif;
   font-weight: 400;
