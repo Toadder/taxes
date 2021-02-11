@@ -1,5 +1,6 @@
 .section-five {
    margin-top: 158px;
+   margin-bottom: 240px;
 }
 
 .section-five__body {
@@ -59,6 +60,7 @@
 
 @media (max-width: 768px) {
    .section-five {
+      margin-top: 90px;
       margin-bottom: 90px;
    }
    .section-five__title {

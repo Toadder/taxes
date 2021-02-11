@@ -1,0 +1,217 @@
+.section-six {
+   position: relative;
+   transform: skew(0deg, -11deg);
+   height: 1080px;
+
+   & > * {
+      transform: skew(0deg, 11deg);
+   }
+
+   &::before {
+      background: #042a97;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      position: absolute;
+      z-index: -1;
+      border-top: 15px solid #ee3834;
+      border-bottom: 15px solid #ee3834;
+   }
+}
+
+.section-six__body {
+   padding-top: 140px;
+}
+
+.section-six__title {
+   color: #f2f2f2;
+   margin-bottom: 95px;
+}
+
+.section-six__cards {
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+
+.section-six__card {
+   height: 665px;
+   display: flex;
+   flex-direction: column;
+   background: #132351;
+   box-shadow: 16px 10px 56px -6px rgba(148, 146, 146, 0.4);
+   border-radius: 30px;
+   padding: 50px 37px 42px;
+   transition: transform 0.4s;
+
+   &:hover {
+      transform: translateY(-20px);
+   }
+
+   &:nth-child(2) {
+      background: #ffffff;
+      transform: translateY(-15px);
+
+      &:hover {
+         transform: translateY(-30px);
+      }
+
+      & .section-six__card-title {
+         color: #001961;
+         border-bottom: 1px solid rgba(156, 160, 179, 0.4);
+      }
+
+      & .section-six__card-item {
+         color: #001961;
+      }
+
+      & .section-six__card-price {
+         color: #172755;
+      }
+
+      & .section-six__card-btn {
+         &::before {
+            background-color: #042a97;
+            border: none;
+         }
+         &:hover::before {
+            background-color: #0636bb;
+         }
+      }
+
+      & .section-six__card-item {
+         background-image: url('../img/section-six/check-mark-blue.svg');
+      }
+   }
+}
+
+.section-six__card-title {
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 34px;
+   text-align: center;
+   color: #ffffff;
+   padding-bottom: 31px;
+   border-bottom: 1px solid rgba(156, 160, 179, 0.4);
+   margin-bottom: 35px;
+}
+
+.section-six__card-list {
+   margin-bottom: auto;
+}
+.section-six__card-item {
+   font-size: 14px;
+   line-height: 2.5;
+   color: #f2f2f2;
+   padding-left: 36px;
+   background-image: url("../img/section-six/check-mark-red.svg");
+   background-position: left center;
+   background-repeat: no-repeat;
+}
+.section-six__card-price {
+   font-family: "Roboto", sans-serif;
+   font-size: 30px;
+   line-height: 35px;
+   text-align: center;
+   color: #ffffff;
+   margin-bottom: 35px;
+
+   & span {
+      font-size: 60px;
+   }
+}
+.section-six__card-btn {
+   width: 230px;
+   padding: 10px 0;
+   margin: 0 auto;
+
+   &::before {
+      background-color: transparent;
+      border: 1px solid white;
+   }
+
+   &:hover::before {
+      background-color: #ee3834;
+   }
+}
+
+@media (max-width: 1160px) {
+   .section-six {
+      height: 2380px;
+   }
+   .section-six__title {
+      margin-bottom: 60px;
+   }
+   .section-six__cards {
+      flex-direction: column;
+      align-items: center;
+   }
+   .section-six__card {
+      margin-bottom: 25px;
+      &:nth-child(2) {
+         transform: translateY(0);
+
+         &:hover {
+            transform: translateY(0);
+         }
+      }
+
+      &:hover {
+         transform: translateY(0);
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .section-six__body {
+      padding-top: 100px;
+   }
+   .section-six__title {
+      font-size: 32px;
+   }
+}
+
+@media (max-width: 576px) {
+   .section-six {
+      height: 1919px;
+   }
+   .section-six__body {
+      padding-top: 70px;
+   }
+   .section-six__title {
+      font-size: 22px;
+      margin-bottom: 40px;
+   }
+   .section-six__card {
+      padding: 40px 13px 40px 13px;
+      height: 561px;
+      max-width :290px;
+   }
+   .section-six__card-title {
+      font-size: 22px;
+      padding-bottom: 24px;
+      max-width: 92px;
+      margin: 0 auto;
+      margin-bottom: 25px;
+   }
+   .section-six__card-item {
+      font-size: 12px;
+      margin-bottom: 4px;
+      padding-left: 30px;
+      line-height: 1.5;
+      margin-bottom: 14px;
+   }
+   .section-six__card-price {
+      margin-bottom: 25px;
+      & span {
+         font-size: 45px;
+      }
+   }
+   .section-six__card-btn {
+      width: 190px;
+      font-size: 15px;
+   }
+}

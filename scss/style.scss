@@ -1,6 +1,10 @@
-@import "_fonts.scss";
+@import  "_fonts.scss";
 
 $Mul: "Mulish";
+
+* {
+   -webkit-tap-highlight-color: transparent;
+}
 
 body {
    font-family: "San Francisco Pro", sans-serif;
@@ -51,6 +55,6 @@ body {
    color: #18191F;
 }
 
-@import "_header.scss", "_section-one.scss", "_section-two.scss", "_section-three.scss", "_section-four.scss", "_section-five.scss";
+@import "_header.scss", "_section-one.scss", "_section-two.scss", "_section-three.scss", "_section-four.scss", "_section-five.scss", "_section-six.scss", "_section-seven.scss", "_section-eight.scss", "_footer.scss";
 
 

@@ -1,0 +1,126 @@
+.section-eight__top {
+   height: 560px;
+   position: relative;
+   z-index: 2;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+
+   &::before {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 100%;
+      max-height: 600px;
+      background: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background: #042a97;
+      transform: skewY(-11deg);
+      transform-origin: bottom right;
+      border-top: 15px solid #ee3834;
+   }
+}
+
+.section-eight__title {
+   color: #f2f2f2;
+   text-align: center;
+   margin-bottom: 43px;
+}
+
+.section-eight__subtitle {
+   color: #e0e0e0;
+   font-weight: 600;
+   font-size: 25px;
+   line-height: 1.5;
+   max-width: 300px;
+   text-align: center;
+   margin: 0 auto;
+   margin-bottom: 82px;
+}
+
+.section-eight__bottom {
+   height: 657px;
+   overflow: hidden;
+}
+
+.section-eight__img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+.section-eight__img-mobile {
+   display: none;
+}
+
+@media (max-width: 1400px) {
+   .section-eight__top {
+      height: 520px;
+   }
+}
+
+@media (max-width: 1200px) {
+   .section-eight__top {
+      height: 490px;
+   }
+}
+
+@media (max-width: 900px) {
+   .section-eight__top {
+      height: 470px;
+   }
+}
+
+@media (max-width: 768px) {
+   .section-eight__top {
+      height: 420px;
+   }
+   .section-eight__title {
+      font-size: 32px;
+   }
+   .section-eight__subtitle {
+      font-size: 22px;
+      margin-bottom: 70px;
+   }
+   .section-eight__bottom {
+      height: 570px;
+   }
+}
+
+@media (max-width: 576px) {
+   .section-eight__top {
+      height: 245px;
+   }
+   .section-eight__bottom {
+      height: 391px;
+   }
+   .section-eight__title {
+      font-size: 22px;
+      margin-bottom: 40px;
+   }
+   .section-eight__subtitle {
+      font-size: 16px;
+      opacity: 0.6;
+      margin-bottom: 40px;
+      max-width: 220px;
+   }
+}
+
+@media (max-width: 430px) {
+   .section-eight__img {
+      display: none;
+   }
+   .section-eight__img-mobile {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+   }
+}

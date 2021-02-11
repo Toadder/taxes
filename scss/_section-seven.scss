@@ -1,0 +1,127 @@
+.section-seven {
+   margin-top: 290px;
+   margin-bottom: 40px;
+}
+
+.section-seven__body {
+}
+
+.section-seven__title {
+   color: #001961;
+   line-height: 1;
+   max-width: 920px;
+   margin: 0 auto;
+   margin-bottom: 50px;
+
+   & span {
+      display: block;
+   }
+}
+
+.section-seven__subtitle {
+   font-weight: 500;
+   font-size: 28px;
+   line-height: 34px;
+   text-align: center;
+   color: #828282;
+   max-width: 827px;
+   margin: 0 auto;
+   margin-bottom: 66px;
+}
+
+.section-seven__list {
+   margin-left: 37px;
+   margin-bottom: 71px;
+}
+
+.section-seven__item {
+   margin-bottom: 30px;
+   padding-left: 54px;
+   background-image: url("../img/section-seven/rhomb.svg");
+   background-repeat: no-repeat;
+   background-position: left top;
+}
+
+.section-seven__item-title {
+   font-weight: 700;
+   line-height: 24px;
+   margin-bottom: 15px;
+}
+
+.section-seven__item-text {
+   line-height: 24px;
+   max-width: 980px;
+}
+
+.section-seven__btn {
+   display: block;
+   margin: 0 auto;
+   width: 378px;
+   padding: 16px 0;
+
+   &::before {
+      background-color: #042a97;
+   }
+
+   &:hover::before {
+      background-color: #0636bb;
+   }
+}
+
+@media (max-width: 768px) {
+   .section-seven {
+      margin-top: 170px;
+   }
+   .section-seven__title {
+      font-size: 32px;
+      margin-bottom: 46px;
+   }
+   .section-seven__subtitle {
+      font-size: 22px;
+      margin-bottom: 52px;
+   }
+   .section-seven__list {
+      margin-left: 0;
+      margin-bottom: 60px;
+   }
+}
+
+@media (max-width: 576px) {
+   .section-seven {
+      margin-top: 115px;
+   }
+   .section-seven__title {
+      font-size: 22px;
+      margin-bottom: 42px;
+      max-width: 270px;
+   }
+   .section-seven__subtitle {
+      font-size: 14px;
+      margin-bottom: 41px;
+      max-width: 255px;
+      line-height: 1.2;
+   }
+   .section-seven__list {
+      margin-bottom: 55px;
+   }
+   .section-seven__item {
+      max-width: 250px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      padding-left: 35px;
+   }
+   .section-seven__item-title {
+      font-size: 14px;
+      margin-bottom: 15px;
+      line-height: 1.2;
+   }
+   .section-seven__item-text {
+      font-size: 14px;
+   }
+   .section-seven__btn {
+      width: 220px;
+      font-size: 16px;
+      line-height: 1.5;
+      padding: 4px 0;
+   }
+}
