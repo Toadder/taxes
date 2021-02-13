@@ -49,7 +49,7 @@
 }
 
 .sldier__item {
-
+   min-height: 313px;
 }
 
 .slider__top-text {
@@ -59,11 +59,6 @@
    color: #737b7d;
    max-width: 451px;
    margin-bottom: 17px;
-
-   // !DELETE
-   & span {
-      color: red;
-   }
 }
 
 .slider__middle-text {
@@ -104,8 +99,6 @@
    overflow: hidden;
 }
 
-
-
 .slick-track {
    display: flex;
    align-items: flex-start;
@@ -145,6 +138,10 @@
    .section-one__body {
       padding: 82px 0 61px 0;
       height: auto;
+      min-height: 500px;
+   }
+   .sldier__item {
+      min-height: 350px;
    }
    .slider__top-text {
       font-size: 14px;
@@ -164,6 +161,11 @@
    .section-one__btn {
       display: none;
       margin: 0;
+   }
+   .slider {
+      & .slick-dots {
+         bottom: 16px;
+      }
    }
 }
 

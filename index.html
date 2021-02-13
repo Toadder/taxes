@@ -8,7 +8,6 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Микрофинансы от А до Я</title>
   </head>
@@ -16,7 +15,7 @@
     <!-- .wrapper -->
     <div class="wrapper">
       <!-- .header -->
-      <header class="header">
+      <header class="header lock-padding">
         <div class="container">
           <div class="header__body">
             <div class="header__burger">
@@ -48,7 +47,7 @@
                 <a href="tel:+79999999999" class="header__phone phone">
                   +7 (999) 999-99-99
                 </a>
-                <a href="#form" class="header__btn btn">
+                <a href="#popup" class="header__btn btn popup-link">
                   Бесплатная консультация
                 </a>
               </div>
@@ -70,7 +69,7 @@
                 <div class="sldier__item">
                   <p class="slider__top-text">
                     Впервые в Красноярске прикладные лекции от практикующего
-                    бизнес-тренера <span>СЛАЙД НОМЕР 1</span>
+                    бизнес-тренера
                   </p>
                   <div class="slider__middle-text">Богдановой Екатерины</div>
                   <h1 class="slider__title">
@@ -79,26 +78,23 @@
                 </div>
                 <div class="sldier__item">
                   <p class="slider__top-text">
-                    Впервые в Красноярске прикладные лекции от практикующего
-                    бизнес-тренера <span>СЛАЙД НОМЕР 2</span>
+                    Это текст слайдера номер 2, который появляется после слайда
+                    номер 1
                   </p>
-                  <div class="slider__middle-text">Богдановой Екатерины</div>
-                  <h1 class="slider__title">
-                    Как снизить налоги для любого бизнеса
-                  </h1>
+                  <div class="slider__middle-text">Екатериный Богдановой</div>
+                  <h1 class="slider__title">Данный текст будет заменён</h1>
                 </div>
                 <div class="sldier__item">
                   <p class="slider__top-text">
-                    Впервые в Красноярске прикладные лекции от практикующего
-                    бизнес-тренера <span>СЛАЙД НОМЕР 3</span>
+                    А тут тоже текст будет изменён и это тоже слайд, но номер 3
                   </p>
                   <div class="slider__middle-text">Богдановой Екатерины</div>
-                  <h1 class="slider__title">
-                    Как снизить налоги для любого бизнеса
-                  </h1>
+                  <h1 class="slider__title">Lorem ipsum dolor sit amet</h1>
                 </div>
               </div>
-              <a href="#form" class="section-one__btn btn"> Принять участие </a>
+              <a href="#popup" class="section-one__btn btn popup-link">
+                Принять участие
+              </a>
             </div>
           </div>
         </section>
@@ -360,7 +356,7 @@
                     </li>
                   </ul>
                   <div class="section-six__card-price">$<span>29</span></div>
-                  <a href="#form" class="section-six__card-btn btn">
+                  <a href="#popup" class="section-six__card-btn btn popup-link">
                     Принять участие
                   </a>
                 </div>
@@ -382,7 +378,7 @@
                     </li>
                   </ul>
                   <div class="section-six__card-price">$<span>99</span></div>
-                  <a href="#form" class="section-six__card-btn btn">
+                  <a href="#popup" class="section-six__card-btn btn popup-link">
                     Принять участие
                   </a>
                 </div>
@@ -413,7 +409,7 @@
                     </li>
                   </ul>
                   <div class="section-six__card-price">$<span>299</span></div>
-                  <a href="#form" class="section-six__card-btn btn">
+                  <a href="#popup" class="section-six__card-btn btn popup-link">
                     Принять участие
                   </a>
                 </div>
@@ -549,7 +545,7 @@
                   </p>
                 </li>
               </ul>
-              <a href="#form" class="section-seven__btn btn">
+              <a href="#popup" class="section-seven__btn btn popup-link">
                 Получить решение для бизнеса
               </a>
             </div>
@@ -611,7 +607,7 @@
               <a href="tel:+79999999999" class="footer__phone phone">
                 +7 (999) 999-99-99
               </a>
-              <a href="#form" class="footer__btn btn">
+              <a href="#popup" class="footer__btn btn popup-link">
                 Бесплатная консультация
               </a>
             </div>
@@ -619,6 +615,61 @@
         </div>
       </div>
     </footer>
+
+    <!-- .popup -->
+    <div class="popup" id="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="" class="popup__close close-popup"></a>
+          <form action="" method="POST" class="popup-form">
+            <h3 class="popup-form__title">Принять участие</h3>
+            <p class="popup-form__upinput">Ваше имя*</p>
+            <input
+              type="text"
+              class="popup-form__input"
+              name="name"
+              value=""
+              placeholder="Имя"
+              required
+            />
+            <p class="popup-form__upinput">Ваш телефон*</p>
+            <input
+              type="tel"
+              class="popup-form__input"
+              name="phone"
+              value=""
+              placeholder="Телефон"
+              required
+            />
+            <p class="popup-form__upinput">Ваш email*</p>
+            <input
+              type="email"
+              class="popup-form__input"
+              name="email"
+              value=""
+              placeholder="Email"
+              required
+            />
+
+            <div class="popup-form__checkbox">
+              <input
+                id="popup-form__checkbox"
+                type="checkbox"
+                name="user_agreement"
+                value="yes"
+                required
+              />
+              <label for="popup-form__checkbox"
+                >Нажимая кнопку я даю свое согласие на обработку персональный
+                данных</label
+              >
+            </div>
+
+            <button class="popup-form__btn btn disabled">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <style>
       @media (max-width: 450px) {
@@ -636,4 +687,3 @@
     <script src="js/main.js"></script>
   </body>
 </html>
-

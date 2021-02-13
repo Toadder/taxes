@@ -95,7 +95,7 @@ $error-color: #ee3834;
 }
 
 .form__checkbox input[type="checkbox"]:checked + label::before {
-   background: url("../img/section-three/checkbox-active.svg") right center;
+   background: url("../img/section-three/checkbox-active.svg") center center;
    background-color: transparent;
 }
 
@@ -140,7 +140,7 @@ $error-color: #ee3834;
    &.disabled::before {
       background: $error-color;
       cursor: pointer;
-      pointer-events: initial;
+      pointer-events: none;
       opacity: 0.8;
    }
 }

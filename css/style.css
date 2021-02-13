@@ -1,8 +1,100 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
 @font-face {
   font-family: "San Francisco Pro";
   src: local("San Francisco Pro Display Regular"), local("San-Francisco-Pro-Display-Regular"), url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff"), url("../fonts/SFProDisplay-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +102,7 @@
   src: local("San Francisco Pro Display Medium"), local("San-Francisco-Pro-Display-Medium"), url("../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay-Medium.woff") format("woff"), url("../fonts/SFProDisplay-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -17,6 +110,7 @@
   src: local("San Francisco Pro Display Semibold"), local("San-Francisco-Pro-Display-Semibold"), url("../fonts/SFProDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFProDisplay-Semibold.woff") format("woff"), url("../fonts/SFProDisplay-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -24,6 +118,7 @@
   src: local("San Francisco Pro Display Bold"), local("San-Francisco-Pro-Display-Bold"), url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff"), url("../fonts/SFProDisplay-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 * {
@@ -70,8 +165,8 @@ body.lock {
   background-color: #000;
   -webkit-transform: skew(-25deg);
           transform: skew(-25deg);
-  -webkit-transition: background-color .4s;
-  transition: background-color .4s;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
 }
 
 .section-title {
@@ -79,7 +174,7 @@ body.lock {
   font-size: 40px;
   line-height: 1.2;
   text-align: center;
-  color: #18191F;
+  color: #18191f;
 }
 
 .header {
@@ -501,6 +596,10 @@ body.lock {
   background-color: transparent;
 }
 
+.sldier__item {
+  min-height: 313px;
+}
+
 .slider__top-text {
   font-weight: 500;
   font-size: 28px;
@@ -508,10 +607,6 @@ body.lock {
   color: #737b7d;
   max-width: 451px;
   margin-bottom: 17px;
-}
-
-.slider__top-text span {
-  color: red;
 }
 
 .slider__middle-text {
@@ -595,6 +690,10 @@ body.lock {
   .section-one__body {
     padding: 82px 0 61px 0;
     height: auto;
+    min-height: 500px;
+  }
+  .sldier__item {
+    min-height: 350px;
   }
   .slider__top-text {
     font-size: 14px;
@@ -614,6 +713,9 @@ body.lock {
   .section-one__btn {
     display: none;
     margin: 0;
+  }
+  .slider .slick-dots {
+    bottom: 16px;
   }
 }
 
@@ -791,7 +893,7 @@ body.lock {
   max-width: 500px;
 }
 
-.form {
+.form, .popup-form {
   background: #f2f2f2;
   -webkit-box-shadow: 9px 15px 17px 7px rgba(0, 0, 0, 0.17);
           box-shadow: 9px 15px 17px 7px rgba(0, 0, 0, 0.17);
@@ -800,7 +902,7 @@ body.lock {
   padding: 70px 70px;
 }
 
-.form__title {
+.form__title, .popup-form__title {
   font-weight: 500;
   font-size: 28px;
   line-height: 34px;
@@ -808,14 +910,14 @@ body.lock {
   margin-bottom: 35px;
 }
 
-.form__upinput {
+.form__upinput, .popup-form__upinput {
   font-size: 20px;
   line-height: 30px;
   color: #696f79;
   margin-bottom: 10px;
 }
 
-.form__input {
+.form__input, .popup-form__input {
   width: 100%;
   border: 1px solid #8692a6;
   border-radius: 6px;
@@ -824,36 +926,36 @@ body.lock {
   font-size: 16px;
 }
 
-.form__input::-webkit-input-placeholder {
+.form__input::-webkit-input-placeholder, .popup-form__input::-webkit-input-placeholder {
   color: #8692a6;
 }
 
-.form__input:-ms-input-placeholder {
+.form__input:-ms-input-placeholder, .popup-form__input:-ms-input-placeholder {
   color: #8692a6;
 }
 
-.form__input::-ms-input-placeholder {
+.form__input::-ms-input-placeholder, .popup-form__input::-ms-input-placeholder {
   color: #8692a6;
 }
 
-.form__input::placeholder {
+.form__input::placeholder, .popup-form__input::placeholder {
   color: #8692a6;
 }
 
-.form__checkbox {
+.form__checkbox, .popup-form__checkbox {
   margin-bottom: 46px;
 }
 
-.form__checkbox input[type="checkbox"] {
+.form__checkbox input[type="checkbox"], .popup-form__checkbox input[type="checkbox"] {
   display: none;
 }
 
-.form__checkbox input[type="checkbox"]:checked + label::before {
-  background: url("../img/section-three/checkbox-active.svg") right center;
+.form__checkbox input[type="checkbox"]:checked + label::before, .popup-form__checkbox input[type="checkbox"]:checked + label::before {
+  background: url("../img/section-three/checkbox-active.svg") center center;
   background-color: transparent;
 }
 
-.form__checkbox label {
+.form__checkbox label, .popup-form__checkbox label {
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -869,7 +971,7 @@ body.lock {
   color: #696f79;
 }
 
-.form__checkbox label::before {
+.form__checkbox label::before, .popup-form__checkbox label::before {
   content: "";
   display: inline-block;
   width: 22px;
@@ -882,33 +984,33 @@ body.lock {
   background-color: #bdbdbd;
 }
 
-.form__btn {
+.form__btn, .popup-form__btn {
   width: 394px;
   padding: 18px 0;
   margin: 0 12px;
 }
 
-.form__btn::before {
+.form__btn::before, .popup-form__btn::before {
   background-color: #042a97;
 }
 
-.form__btn:hover::before {
+.form__btn:hover::before, .popup-form__btn:hover::before {
   background-color: #0636bb;
 }
 
-.form__btn.disabled::before {
+.form__btn.disabled::before, .disabled.popup-form__btn::before {
   background: #ee3834;
   cursor: pointer;
-  pointer-events: initial;
+  pointer-events: none;
   opacity: 0.8;
 }
 
 @media (max-width: 800px) {
-  .form {
+  .form, .popup-form {
     padding: 40px;
     width: 425px;
   }
-  .form__btn {
+  .form__btn, .popup-form__btn {
     width: 315px;
   }
 }
@@ -941,7 +1043,7 @@ body.lock {
   .section-three__title {
     text-align: center;
   }
-  .form__title {
+  .form__title, .popup-form__title {
     font-size: 25px;
     margin-bottom: 25px;
     text-align: center;
@@ -965,43 +1067,43 @@ body.lock {
   .section-three__left {
     margin-bottom: 40px;
   }
-  .form {
+  .form, .popup-form {
     width: 290px;
     padding: 23px 37px 35px 37px;
   }
-  .form__title {
+  .form__title, .popup-form__title {
     font-size: 22px;
     margin-bottom: 17px;
   }
-  .form__upinput {
+  .form__upinput, .popup-form__upinput {
     font-size: 16px;
     margin-bottom: 0;
   }
-  .form__input {
+  .form__input, .popup-form__input {
     padding: 9px 16px;
     font-size: 12px;
     margin-bottom: 0;
   }
-  .form__input:last-of-type {
+  .form__input:last-of-type, .popup-form__input:last-of-type {
     margin-bottom: 10px;
   }
-  .form__checkbox {
+  .form__checkbox, .popup-form__checkbox {
     margin-bottom: 16px;
   }
-  .form__checkbox label {
+  .form__checkbox label, .popup-form__checkbox label {
     font-size: 11px;
     max-width: 210px;
     padding-left: 20px;
     line-height: 1.5;
   }
-  .form__checkbox label::before {
+  .form__checkbox label::before, .popup-form__checkbox label::before {
     width: 11px;
     height: 11px;
   }
-  .form__checkbox input[type="checkbox"]:checked + label::before {
+  .form__checkbox input[type="checkbox"]:checked + label::before, .popup-form__checkbox input[type="checkbox"]:checked + label::before {
     background: url("../img/section-three/checkbox-active.-mobile.svg") right center;
   }
-  .form__btn {
+  .form__btn, .popup-form__btn {
     width: 190px;
     font-size: 16px;
     padding: 2px 0;
@@ -1802,4 +1904,83 @@ body.lock {
     margin-top: -75px;
     margin-bottom: 25px;
   }
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 60;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup.open .popup__content {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup__content {
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+}
+
+.popup__close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.popup__close::before, .popup__close::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #1565d8;
+}
+
+.popup__close::before {
+  top: 9px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.popup__close::after {
+  bottom: 9px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
