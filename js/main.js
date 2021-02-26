@@ -145,12 +145,3 @@ $(document).ready(function () {
   });
 })();
 
-// Change footer image on display less 640px
-(function () {
-  const footerImage = document.querySelector("#footer__img");
-  if (window.matchMedia("(max-width: 640px)").matches) {
-    footerImage.src = "img/common/logo.png";
-  } else {
-    footerImage.src = "img/common/logo-footer.png";
-  }
-})();

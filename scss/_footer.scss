@@ -26,24 +26,11 @@
    margin-top: -25px;
    padding: 0;
    position: relative;
-   top: 10px;
+   top: 7px;
 
    & img {
       width: 284px;
       height: 107px;
-   }
-
-   &::before {
-      content: "";
-      display: block;
-      z-index: -1;
-      position: absolute;
-      top: 0;
-      left: 12.5px;
-      width: calc(100% - 25px);
-      height: 100%;
-      background-color: #fff;
-      transform: skew(-27deg);
    }
 }
 .footer__consult {
