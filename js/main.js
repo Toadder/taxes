@@ -23,21 +23,6 @@ $(document).ready(function () {
     pauseOnFocus: false,
   });
 
-  // // Slow Scroll from btn to form
-  // $("a.btn").click(function () {
-  //   let formHeight = $(".header").height() * 1.2;
-  //   $("html, body").animate(
-  //     {
-  //       scrollTop: $($(this).attr("href")).offset().top - formHeight + "px",
-  //     },
-  //     {
-  //       duration: 1000,
-  //       easing: "swing",
-  //     }
-  //   );
-  //   return false;
-  // });
-
   //Check checkbox status in the page (section-three)
   $("#form__checkbox").on("change", function () {
     if ($("#form__checkbox").prop("checked")) {
@@ -158,4 +143,14 @@ $(document).ready(function () {
       popupClose(popupActive);
     }
   });
+})();
+
+// Change footer image on display less 640px
+(function () {
+  const footerImage = document.querySelector("#footer__img");
+  if (window.matchMedia("(max-width: 640px)").matches) {
+    footerImage.src = "img/common/logo.png";
+  } else {
+    footerImage.src = "img/common/logo-footer.png";
+  }
 })();

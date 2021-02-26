@@ -1,0 +1,208 @@
+.service-one-mobile {
+   display: none;
+}
+
+@media (max-width: 1200px) {
+   .service-one-mobile {
+      display: block;
+      margin-bottom: 60px;
+      margin-top: 115px;
+   }
+
+   .service-one-mobile__top {
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-top: 50px;
+      min-height: 455px;
+      margin-bottom: 10px;
+      margin-bottom: 30px;
+   }
+
+   .service-one-mobile__title {
+      font-size: 31px;
+      line-height: 125%;
+      text-align: center;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #ffffff;
+      max-width: 400px;
+      margin: 0 auto 40px;
+      font-weight: 700;
+   }
+
+   .service-one-mobile__subtitle {
+      font-size: 23px;
+      line-height: 125%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      max-width: 360px;
+      margin: 0 auto;
+      padding-bottom: 40px;
+      border-bottom: 5px solid rgba(255, 255, 255, 0.5);
+      margin-bottom: 50px;
+   }
+
+   .service-one-mobile__text {
+      font-size: 31px;
+      line-height: 125%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fefeff;
+      max-width: 100px;
+      max-width: 475px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      font-weight: 600;
+   }
+
+   .service-one-mobile__experience {
+      font-size: 31px;
+      line-height: 120%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fefeff;
+      padding-bottom: 50px;
+   }
+}
+
+@media (max-width: 640px) {
+   .service-one-mobile {
+      margin-top: 80px;
+   }
+   .service-one-mobile__top {
+      padding-top: 19px;
+   }
+}
+
+@media (max-width: 576px) {
+   .service-one-mobile__top {
+      background-size: 100%;
+      height: auto;
+   }
+   .service-one-mobile__title {
+      font-size: 22px;
+      margin-bottom: 25px;
+      max-width: 290px;
+   }
+   .service-one-mobile__subtitle {
+      font-size: 16px;
+      max-width: 252px;
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+   }
+   .service-one-mobile__text {
+      font-size: 22px;
+      margin-bottom: 25px;
+      max-width: 340px;
+   }
+   .service-one-mobile__experience {
+      font-size: 22px;
+      padding-bottom: 30px;
+   }
+}
+
+@media (max-width: 400px) {
+   .service-one-mobile__top {
+      background-size: 100%;
+   }
+   .service-one-mobile__subtitle {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+   }
+   .service-one-mobile__text {
+      font-size: 20px;
+      margin-bottom: 30px;
+   }
+}
+
+@media (max-width: 322px) {
+   .service-one-mobile__top {
+      background-size: auto;
+   }
+   .service-one-mobile__subtitle {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+   }
+   .service-one-mobile__text {
+      margin-bottom: 20px;
+   }
+}
+
+.service-one-mobile__middle {
+   display: none;
+}
+
+@media (max-width: 576px) {
+   .service-one-mobile__middle {
+      display: block;
+      margin-bottom: 30px;
+   }
+   .service-one-mobile__middle-title {
+      font-size: 24px;
+      line-height: 120%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #042a97;
+      max-width: 380px;
+      font-weight: 600;
+      margin: 20px auto 28px;
+   }
+
+   .service-one-mobile__middle-cards {
+      max-width: 275px;
+      margin: 0 auto;
+
+      & img {
+         transform: translateX(-25px);
+      }
+   }
+}
+
+.service-one-mobile__bottom {
+   display: none;
+}
+
+@media (max-width: 1200px) {
+   .service-one-mobile__bottom {
+      display: block;
+   }
+   .service-one-mobile__bottom-title {
+      font-weight: 600;
+      font-size: 27px;
+      line-height: 140%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ee3834;
+      font-style: italic;
+      max-width: 240px;
+      margin: 0 auto 90px;
+   }
+
+   .service-one-mobile__bottom-link {
+      background: #042a97;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 25px;
+      width: 300px;
+      display: block;
+      text-align: center;
+      padding: 14px 0;
+      font-family: $Mul, sans-serif;
+      font-size: 18px;
+      text-align: center;
+      color: #ffffff;
+      margin: 0 auto 50px;
+      transition: background-color .3s;
+
+      &:hover {
+         background-color: #0535b8;
+      }
+   }
+}
+
+@media (max-width: 576px) {
+   .service-one-mobile__bottom-link {
+      width: 235px;
+      font-size: 14px;
+   }
+}
