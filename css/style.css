@@ -2586,8 +2586,7 @@ body.lock {
     background-repeat: no-repeat;
     padding-top: 50px;
     min-height: 455px;
-    margin-bottom: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
   .service-one-mobile__title {
     font-size: 31px;
@@ -2706,6 +2705,18 @@ body.lock {
     display: block;
     margin-bottom: 30px;
   }
+  .service-one-mobile__middle-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 15px;
+  }
+  .service-one-mobile__middle-logo {
+    width: 210px;
+  }
   .service-one-mobile__middle-title {
     font-size: 24px;
     line-height: 120%;
@@ -2714,15 +2725,106 @@ body.lock {
     color: #042a97;
     max-width: 380px;
     font-weight: 600;
-    margin: 20px auto 28px;
+    margin: 0 auto 28px;
   }
   .service-one-mobile__middle-cards {
-    max-width: 275px;
+    max-width: 100%;
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
   }
   .service-one-mobile__middle-cards img {
-    -webkit-transform: translateX(-25px);
-            transform: translateX(-25px);
+    width: 100%;
+  }
+  .service-one-mobile__middle-cards-link {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 25%;
+    display: block;
+  }
+  .service-one-mobile__middle-cards-link.first {
+    -webkit-transform: skewX(16deg);
+            transform: skewX(16deg);
+    left: -67px;
+    width: 35%;
+  }
+  .service-one-mobile__middle-cards-link.second {
+    left: 129px;
+    width: 25%;
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  .service-one-mobile__middle-cards-link.third {
+    left: 270px;
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  .service-one-mobile__middle-cards-link.fourth {
+    left: 414px;
+    width: 36%;
+    -webkit-transform: skewX(14deg);
+            transform: skewX(14deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .service-one-mobile__middle-cards-link.first {
+    width: 38%;
+  }
+  .service-one-mobile__middle-cards-link.second {
+    left: 114px;
+  }
+  .service-one-mobile__middle-cards-link.third {
+    left: 234px;
+  }
+  .service-one-mobile__middle-cards-link.fourth {
+    left: 354px;
+  }
+}
+
+@media (max-width: 435px) {
+  .service-one-mobile__middle-cards-link.first {
+    width: 39%;
+  }
+  .service-one-mobile__middle-cards-link.second {
+    left: 101px;
+  }
+  .service-one-mobile__middle-cards-link.third {
+    left: 209px;
+  }
+  .service-one-mobile__middle-cards-link.fourth {
+    left: 317px;
+  }
+}
+
+@media (max-width: 385px) {
+  .service-one-mobile__middle-cards-link.first {
+    width: 42%;
+  }
+  .service-one-mobile__middle-cards-link.second {
+    left: 88px;
+  }
+  .service-one-mobile__middle-cards-link.third {
+    left: 180px;
+  }
+  .service-one-mobile__middle-cards-link.fourth {
+    left: 270px;
+  }
+}
+
+@media (max-width: 335px) {
+  .service-one-mobile__middle-cards-link.first {
+    width: 45%;
+  }
+  .service-one-mobile__middle-cards-link.second {
+    left: 74px;
+  }
+  .service-one-mobile__middle-cards-link.third {
+    left: 156px;
+  }
+  .service-one-mobile__middle-cards-link.fourth {
+    left: 239px;
   }
 }
 
@@ -2743,7 +2845,21 @@ body.lock {
     color: #ee3834;
     font-style: italic;
     max-width: 240px;
-    margin: 0 auto 90px;
+    margin: 0 auto 38px;
+  }
+  .service-one-mobile__bottom-phone {
+    margin: 0 auto;
+    margin-bottom: 45px;
+    text-align: center;
+    display: block;
+    color: #0535b8;
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.2;
+  }
+  .service-one-mobile__bottom-phone:hover {
+    opacity: 0.7;
   }
   .service-one-mobile__bottom-link {
     background: #042a97;
@@ -2759,8 +2875,8 @@ body.lock {
     text-align: center;
     color: #ffffff;
     margin: 0 auto 50px;
-    -webkit-transition: background-color .3s;
-    transition: background-color .3s;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
   }
   .service-one-mobile__bottom-link:hover {
     background-color: #0535b8;
