@@ -265,6 +265,7 @@
    }
 }
 
+
 .row-second__top-text {
    font-style: italic;
    font-weight: bold;
@@ -402,6 +403,7 @@
    position: relative;
    width: 905px;
    margin-bottom: 40px;
+   display: block;
 
    &::before {
       content: "";
@@ -415,6 +417,15 @@
       background-repeat: no-repeat;
       background-size: cover;
    }
+}
+
+.row-third__top-link {
+   position: absolute;
+   width: 980px;
+   height: 188px;
+   top: 0;
+   right: 0;
+   clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
 }
 
 .row-third__title {
@@ -472,6 +483,15 @@
    }
 }
 
+.row-third__bottom-link {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 930px;
+   height: 176px;
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+}
+
 .row-third__bottom-text {
    font-weight: bold;
    font-size: 25px;
@@ -489,4 +509,3 @@
       display: none;
    }
 }
-
