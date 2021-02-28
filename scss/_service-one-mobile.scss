@@ -16,7 +16,6 @@
       min-height: 455px;
       margin-bottom: 20px;
       position: relative;
-      display: block;
    }
 
    .service-one-mobile__top-link {
@@ -25,6 +24,7 @@
       left: 0;
       width: 100%;
       height: 100%;
+      display: block;
    }
 
    .service-one-mobile__title {
@@ -130,21 +130,43 @@
 
 @media (max-width: 385px) {
    .service-one-mobile__top {
-      margin-bottom: 60px;
+      margin-bottom: 50px;
    }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 377px) {
    .service-one-mobile__top-link {
       clip-path: polygon(0 0, 100% 0, 100% 88%, 62% 100%, 0 100%, 0% 50%);
    }
+   .service-one-mobile__top {
+
+      &::before {
+         content: "";
+         position: absolute;
+         width: 59%;
+         height: 10px;
+         bottom: 0;
+         left: 0;
+         background-color: #ee3834;
+      }
+   }
 }
 
-@media (max-width: 355px) {
+@media (max-width: 370px) {
+   .service-one-mobile__top {
+
+      &::before {
+        display: none;
+      }
+   }
+}
+
+@media (max-width: 360px) {
    .service-one-mobile__top {
       margin-bottom: 35px;
    }
 }
+
 
 @media (max-width: 325px) {
    .service-one-mobile__top {
@@ -297,11 +319,11 @@
    .service-one-mobile__middle-link {
       position: absolute;
       right: 5px;
-      top: -68px;
-       margin: 0;
+      top: -73px;
+      margin: 0;
    }
    .service-one-mobile__middle-logo {
-      width: 130px;
+      width: 110px;
    }
 }
 
@@ -334,7 +356,6 @@
       top: -82px;
    }
 }
-
 
 .service-one-mobile__bottom {
    display: none;
